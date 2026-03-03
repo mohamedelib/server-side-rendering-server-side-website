@@ -220,6 +220,8 @@ header a {
   color: white;
   justify-content: center;
   text-align: center;
+  margin-left: calc(var(--space-md) * -1);
+  margin-right: calc(var(--space-md) * -1);
 }
 
 .mini-cards {
