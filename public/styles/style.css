@@ -190,3 +190,25 @@ header a {
   text-align: center;
 }
 
+.card {
+  outline: 1px solid black;
+  border-radius: 1em;
+  padding: 0.7em;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 0.5em;
+  object-fit: cover;
+}
+
+.cardinfo {
+  padding: 1em;
+}
+
+.kaarten {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
