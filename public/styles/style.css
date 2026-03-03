@@ -113,4 +113,31 @@ a {
   font-family: var(--font-body);
   font-weight: var(--text-font-weight);
 }
+
+a {
+  text-decoration: none;
+  color: var(--color-text);
+  border-bottom: 1px solid;
+}
+
+/* einde stylesheet */
+
+.first-header ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+  justify-content: flex-end;
+}
+
+header {
+  border-bottom: 1px solid black;
+}
+
+.second-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  margin-left: -1em;
 }
