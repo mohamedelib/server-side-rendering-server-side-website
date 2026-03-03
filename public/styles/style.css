@@ -179,3 +179,14 @@ header a {
   background-color: var(--color-accent);
   color: var(--color-bg-page);
 }
+
+.banner img {
+  border-radius: 1em 1em 0 0;
+  height: 20em;
+  width: 100%;
+  object-fit: cover;
+}
+.divider {
+  text-align: center;
+}
+
