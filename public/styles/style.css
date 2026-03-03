@@ -212,3 +212,23 @@ header a {
   gap: 1em;
 }
 
+.info-cards {
+  padding: 0;
+  margin: 0;
+  background-color: var(--color-accent);
+  width: 100%;
+  color: white;
+  justify-content: center;
+  text-align: center;
+}
+
+.mini-cards {
+  background-color: var(--color-bg-page);
+  color: var(--color-text);
+  border-radius: 20px;
+  padding-bottom: var(--space-xl);
+}
+.padd {
+  margin: var(--space-md);
+}
+
