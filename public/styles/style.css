@@ -158,10 +158,6 @@ header a {
   justify-content: flex-end;
 }
 
-header {
-  border-bottom: 1px solid black;
-}
-
 .second-header {
   display: flex;
   justify-content: space-between;
