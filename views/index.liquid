@@ -1,5 +1,6 @@
 {% render 'partials/head.liquid', title: 'Squad page' %}
 {% comment %} header {% endcomment %}
+ <div class="page-wrapper">
 <header>
   <nav class="first-header">
     <ul>
@@ -27,39 +28,39 @@
     <span class="verdeling">
       <a class="overons astyle" href="">Meer over Ad's</a>
       <a class="ad-dag astyle" href="">Kom naar de AD-dag > </a>
-      <img src="./assets/bannerpic.jpg" alt="banner" width="500" height="300">
+      <img src="./assets/bannerpic.jpg" alt="banner" width="300" height="210">
     </span>
   </section>
 
-  <p>het laatste nieuws</p>
+  <p class="divider">het laatste nieuws</p>
+  <section class="kaarten">
+    <article class="card">
+      <img src="./assets/ad-dag.jpg" width="310" height="210" alt="Ad Dag">
+      <div class="cardinfo">
+        <h2>Landelijke Ad Dag</h2>
+        <p>Dit schooljaar vindt de landelijke Ad-dag plaats op vrijdag 17 april 2026!</p>
+        <a href="">Meer informatie</a>
+      </div>
+    </article>
 
-  <article class="card">
-    <img src="./assets/ad-dag.jpg" alt="Ad Dag">
-    <div class="cardinfo">
-      <h2>Landelijke Ad Dag</h2>
-      <p>Dit schooljaar vindt de landelijke Ad-dag plaats op vrijdag 17 april 2026!</p>
-      <a href="">Meer informatie</a>
-    </div>
-  </article>
+    <article class="card">
+      <img src="./assets/ad-dag.jpg" alt="Ad Dag">
+      <div class="cardinfo">
+        <h2>Landelijke Ad Dag</h2>
+        <p>Dit schooljaar vindt de landelijke Ad-dag plaats op vrijdag 17 april 2026!</p>
+        <a href="">Meer informatie</a>
+      </div>
+    </article>
 
-  <article class="card">
-    <img src="./assets/ad-dag.jpg" alt="Ad Dag">
-    <div class="cardinfo">
-      <h2>Landelijke Ad Dag</h2>
-      <p>Dit schooljaar vindt de landelijke Ad-dag plaats op vrijdag 17 april 2026!</p>
-      <a href="">Meer informatie</a>
-    </div>
-  </article>
-
-  <article class="card">
-    <img src="./assets/ad-dag.jpg" alt="Ad Dag">
-    <div class="cardinfo">
-      <h2>Landelijke Ad Dag</h2>
-      <p>Dit schooljaar vindt de landelijke Ad-dag plaats op vrijdag 17 april 2026!</p>
-      <a href="">Meer informatie</a>
-    </div>
-  </article>
-
+    <article class="card">
+      <img src="./assets/ad-dag.jpg" alt="Ad Dag">
+      <div class="cardinfo">
+        <h2>Landelijke Ad Dag</h2>
+        <p>Dit schooljaar vindt de landelijke Ad-dag plaats op vrijdag 17 april 2026!</p>
+        <a href="">Meer informatie</a>
+      </div>
+    </article>
+  </section>
   <section class="information">
     <img src="./assets/logo_klein.svg" alt="Associate Degree logo">
     <h2>Wat zijn Associate degrees en hoe sluit het aan bij jou wensen?</h2>
@@ -73,8 +74,9 @@
     </p>
     <a href="">Meer info over Ad's'</a>
   </section>
-
+</div>
   <section class="info-cards">
+    <div class="padd">
     <h2>Ontdek het Ad‑onderwijs</h2>
     <p>
       Leer alles over Associate degrees, doorstroommogelijkheden en netwerkevenementen. Blijf op de hoogte van
@@ -87,7 +89,7 @@
         Met een Associate degree stroom je door naar het derde jaar van een bachelor. Zo combineer je praktijk met een
         diploma.
       </p>
-      <a href="">Meer over </a>
+      <a class="astyle" href="">Meer over </a>
     </article>
 
     <article class="mini-cards">
@@ -96,7 +98,7 @@
         Met een Associate degree stroom je door naar het derde jaar van een bachelor. Zo combineer je praktijk met een
         diploma.
       </p>
-      <a href="">Meer over </a>
+      <a class="astyle" href="">Meer over </a>
     </article>
 
     <article class="mini-cards">
@@ -105,10 +107,11 @@
         Met een Associate degree stroom je door naar het derde jaar van een bachelor. Zo combineer je praktijk met een
         diploma.
       </p>
-      <a href="">Meer over </a>
+      <a class="astyle" href="">Meer over </a>
     </article>
+    </div>
   </section>
-
+<div class="padd">
   <section class="waaromkies">
     <img src="./assets/logo_klein.svg" alt="Associate Degree logo">
     <h2>Waarom kiezen voor een Associate degree?</h2>
@@ -122,8 +125,9 @@
       <li>Korte studieduur van 2 jaar</li>
       <li>Doorstromen naar een bacheloropleiding mogelijk</li>
     </ul>
-    <a href="">Meer over </a>
+    <a class="astyle" href="">Meer over </a>
   </section>
+</div>
 </main>
 
 {% render 'partials/foot.liquid' %}
