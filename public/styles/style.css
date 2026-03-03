@@ -55,6 +55,8 @@
   --space-md: clamp(16px, 1.5vw, 20px);
   --space-lg: clamp(24px, 2vw, 32px);
   --space-xl: clamp(32px, 3vw, 48px);
+  --button-outline-padding: 1.1rem 1.8rem;
+  --button-outline-radius: 15px;
 
   /* =========================
      TYPOGRAFIE
@@ -82,6 +84,7 @@
 
 body {
   padding: var(--space-s);
+  background-color: var(--color-bg-page);
 }
 
 h1 {
@@ -123,6 +126,7 @@ a {
 }
 
 a {
+header a {
   text-decoration: none;
   color: var(--color-text);
   border-bottom: 1px solid;
@@ -147,5 +151,19 @@ header {
   justify-content: space-between;
   align-items: center;
   margin: 10px 0;
-  margin-left: -1em;
+}
+
+.verdeling {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.overons {
+  background-color: var(--color-bg-page);
+}
+
+.ad-dag {
+  background-color: var(--color-accent);
+  color: var(--color-bg-page);
 }
