@@ -132,6 +132,15 @@ header a {
   border-bottom: 1px solid;
 }
 
+.astyle {
+  padding: var(--button-outline-padding);
+  color: var(--color-accent);
+  outline: 1px solid var(--color-accent);
+  border-radius: var(--button-outline-radius);
+  cursor: pointer;
+  width: fit-content;
+}
+
 /* einde stylesheet */
 
 .first-header ul {
