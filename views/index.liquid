@@ -1,17 +1,19 @@
 {% render 'partials/head.liquid', title: 'Squad page' %}
 {% comment %} header {% endcomment %}
 <header>
-  <section>
+  <nav class="first-header">
     <ul>
       <li><a href="">FAQ's</a></li>
       <li><a href="">Over ons</a></li>
       <li><a href="">Contact</a></li>
     </ul>
-  </section>
+  </nav>
 </header>
 <header>
-  <img src="./assets/logo.svg" alt="Associate Degree Platform">
-  <img src="./assets/burger-bar.png" alt="menu" width="75" height="75">
+  <nav class="second-header">
+    <img src="./assets/logo.svg" alt="Associate Degree Platform">
+    <img src="./assets/burger-bar.png" alt="menu" width="75" height="75">
+  </nav>
 </header>
 
 {% comment %} Main {% endcomment %}
@@ -57,7 +59,7 @@
   </article>
 
   <section class="information">
-    <img src="./assets/logo_klein.svg">
+    <img src="./assets/logo_klein.svg" alt="Associate Degree logo">
     <h2>Wat zijn Associate degrees en hoe sluit het aan bij jou wensen?</h2>
     <p>
       Associate degrees zijn tweejarige hbo-opleidingen die sterk praktijkgericht zijn en direct aansluiten op de
@@ -106,7 +108,7 @@
   </section>
 
   <section class="waaromkies">
-    <img src="./assets/logo_klein.svg">
+    <img src="./assets/logo_klein.svg" alt="Associate Degree logo">
     <h2>Waarom kiezen voor een Associate degree?</h2>
     <p>
       Een Associate degree combineert praktijkgericht onderwijs met doorstroommogelijkheden, zodat je snel ervaring
