@@ -232,3 +232,15 @@ header a {
   margin: var(--space-md);
 }
 
+.waaromkies ul {
+  display: flex;
+  flex-direction: column;
+  list-style-image: url("/assets/check-circle.svg");
+  gap: 1rem;
+  padding-bottom: 1rem;
+}
+
+.waaromkies a {
+  background-color: var(--color-accent);
+  color: white;
+}
