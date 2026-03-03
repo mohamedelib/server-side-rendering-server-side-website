@@ -83,10 +83,17 @@
 }
 
 body {
-  padding: var(--space-s);
   background-color: var(--color-bg-page);
+  margin: 0;
 }
 
+.page-wrapper {
+  padding: var(--space-s);
+  margin: var(--space-sm);
+}
+* {
+  scroll-behavior: smooth;
+}
 h1 {
   line-height: var(--h1-line-height);
   font-size: var(--h1-size);
