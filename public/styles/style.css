@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Clash_Display:wght@400;600;700&display=swap");
+
+:root {
+  /* =========================
+     BRAND BLUE
+  ========================== */
+
+  --color-brand-darkest: hsl(213, 100%, 8%);
+  --color-brand-darker: hsl(213, 100%, 15%);
+  --color-brand-dark: hsl(213, 100%, 18%);
+
+  --color-brand-active: hsl(213, 100%, 28%);
+  --color-brand-hover: hsl(213, 100%, 38%);
+  --color-brand: hsl(213, 100%, 48%);
+
+  --color-brand-soft: hsl(213, 23%, 58%);
+  --color-brand-light: hsl(213, 100%, 68%);
+  --color-brand-lighter: hsl(213, 100%, 78%);
+  --color-brand-subtle: hsl(213, 100%, 88%);
+
+  /* =========================
+     ACCENT
+  ========================== */
+
+  --color-accent-strong: hsl(10, 79%, 45%);
+  --color-accent: hsl(10, 79%, 55%);
+  --color-accent-light: hsl(10, 90%, 65%);
+  --color-accent-soft: hsl(10, 90%, 75%);
+  --color-accent-subtle: hsl(10, 90%, 85%);
+
+  /* =========================
+     NEUTRALS
+  ========================== */
+
+  --color-bg-dark: hsl(213, 21%, 9%);
+  --color-bg-darker: hsl(213, 22%, 12%);
+  --color-surface-dark: hsl(213, 23%, 18%);
+
+  --color-text: hsl(213, 21%, 9%);
+  --color-text-muted: hsl(213, 20%, 33%);
+  --color-text-subtle: hsl(213, 19%, 36%);
+
+  --color-border: hsl(213, 8%, 84%);
+  --color-border-strong: hsl(212, 18%, 69%);
+
+  --color-bg-page: hsl(0, 0%, 98%);
+  --color-bg-surface: hsl(0, 0%, 100%);
+
+  /* =========================
+     TYPOGRAFIE
+  ========================== */
+
+  --font-body: "Archivo", sans-serif;
+  --font-heading: "ClashDisplay", sans-serif;
+
+  --heading-font-weight: 600;
+  --button-font-weight: 400;
+  --text-font-weight: 300;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-heading);
+}
+
+p {
+  font-family: var(--font-body);
+}
