@@ -48,6 +48,9 @@ app.get("/", async function (request, response) {
     homepageHeader: {
       title: "Het landelijke platform voor associate degrees",
       text: "Ad-netwerk samen om kennis te delen, samen te werken en de kwaliteit en zichtbaarheid van Associate degrees te versterken.",
+      headeritem1: "FAQ's",
+      headeritem2: "Over ons",
+      headeritem3: "Contact",
       buttons: [
         {
           url: "#bla",
