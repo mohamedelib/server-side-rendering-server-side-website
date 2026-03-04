@@ -57,6 +57,14 @@ app.get("/", async function (request, response) {
       scndheaderitem4: "Talentaward",
       scndheaderitem5: "Nieuws",
       scndheaderitem6: "Kom naar Ad-dag",
+      nieuwsitem1: "Landelijke Ad Dag",
+      nieuwsitem2: "Dit is een test in principe",
+      nieuwsitem3: "Workshop Ad'ers zijn doeners!",
+      nieuwsdiscription1:
+        "Dit schooljaar vindt de landelijke Ad-dag plaats op vrijdag 17 april 2026!",
+      nieuwsdiscription2: "Hopelijk werkt dit?",
+      nieuwsdiscription3:
+        "De Ad-dag is een iniatief vanuit het Overlegplatform Associatedegrees. De vijfde...",
 
       buttons: [
         {
