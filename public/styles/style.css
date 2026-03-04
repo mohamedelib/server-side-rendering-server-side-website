@@ -167,7 +167,7 @@ header a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 10px 0;
+  margin: 2em 0;
   box-sizing: border-box;
   max-width: 1400px;
   margin-right: 1em;
@@ -253,9 +253,12 @@ header a {
 }
 
 .card img {
+  display: block;
   width: 100%;
   border-radius: 0.5em;
   object-fit: cover;
+  max-width: 430px;
+  margin: 0 auto;
 }
 
 .cardinfo {
@@ -268,7 +271,7 @@ header a {
   gap: 1em;
 
   @media (min-width: 780px) {
-    max-width: 550px;
+    flex-direction: row;
     margin: 0 auto;
   }
 }
