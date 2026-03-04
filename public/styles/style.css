@@ -135,7 +135,6 @@ a {
 header a {
   text-decoration: none;
   color: var(--color-text);
-  border-bottom: 1px solid;
 }
 
 .astyle {
@@ -150,7 +149,13 @@ header a {
 
 /* einde stylesheet */
 
-.first-header ul {
+.burgermenu {
+  @media (min-width: 1160px) {
+    display: none;
+  }
+}
+.first-header ul,
+.second-header ul {
   list-style: none;
   display: flex;
   flex-direction: row;
@@ -163,8 +168,17 @@ header a {
   justify-content: space-between;
   align-items: center;
   margin: 10px 0;
+  box-sizing: border-box;
+  max-width: 1400px;
+  margin-right: 1em;
 }
 
+.second-header ul {
+  display: none;
+  @media (min-width: 1160px) {
+    display: flex;
+  }
+}
 .verdeling {
   display: flex;
   flex-direction: column;
