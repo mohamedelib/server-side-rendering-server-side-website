@@ -250,6 +250,7 @@ header a {
   outline: 1px solid black;
   border-radius: 1em;
   padding: 0.7em;
+  max-width: 375px;
 }
 
 .card img {
@@ -269,6 +270,8 @@ header a {
   display: flex;
   flex-direction: column;
   gap: 1em;
+  margin: 0 auto;
+  max-width: fit-content;
 
   @media (min-width: 780px) {
     flex-direction: row;
@@ -304,6 +307,9 @@ header a {
   padding-bottom: var(--space-xl);
   max-width: 600px;
   margin: 0 auto;
+  padding-top: 0.5em;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 .tekstt {
@@ -312,7 +318,10 @@ header a {
   max-width: 700px;
 }
 .padd {
+  display: flex;
+  flex-direction: column;
   margin: var(--space-md);
+  gap: 1em;
 }
 
 .waaromkies {
