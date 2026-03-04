@@ -226,6 +226,10 @@ header a {
 
 .divider {
   text-align: center;
+  @media (min-width: 780px) {
+    margin: 0 auto;
+    margin-bottom: 2em;
+  }
 }
 
 .card {
@@ -248,11 +252,25 @@ header a {
   display: flex;
   flex-direction: column;
   gap: 1em;
-}
 
+  @media (min-width: 780px) {
+    max-width: 550px;
+    margin: 0 auto;
+  }
+}
+.information {
+  @media (min-width: 780px) {
+    margin: 0 auto;
+    max-width: 600px;
+    margin-top: 2em;
+  }
+
+  .information a {
+    background-color: var(--color-accent);
+    color: white;
+  }
+}
 .info-cards {
-  padding: 0;
-  margin: 0;
   background-color: var(--color-accent);
   width: 100%;
   color: white;
