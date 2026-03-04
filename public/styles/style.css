@@ -247,6 +247,9 @@ header a {
 }
 
 .card {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr 0.5fr;
   outline: 1px solid black;
   border-radius: 1em;
   padding: 0.7em;
@@ -260,10 +263,15 @@ header a {
   object-fit: cover;
   max-width: 430px;
   margin: 0 auto;
+  grid-row: 1 / 2;
 }
 
 .cardinfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em;
   padding: 1em;
+  grid-row: 2 / 3;
 }
 
 .kaarten {
