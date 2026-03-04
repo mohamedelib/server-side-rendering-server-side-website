@@ -1,6 +1,8 @@
 {% render 'partials/head.liquid', title: 'Squad page' %}
 {% comment %} header {% endcomment %}
  <div class="page-wrapper">
+
+
 <header>
   <nav class="first-header">
     <ul>
@@ -20,16 +22,15 @@
 {% comment %} Main {% endcomment %}
 <main>
   <section class="banner">
-    <h1>Het landelijke platform voor associate degrees</h1>
+    <h1>{{ extraData.homepageHeader.title }}</h1>
     <p>
-      Ad-netwerk samen om kennis te delen, samen te werken en de kwaliteit en zichtbaarheid van Associate degrees te
-      versterken.
+      {{ extraData.homepageHeader.text }}
     </p>
     <span class="verdeling">
       <a class="overons astyle" href="">Meer over Ad's</a>
       <a class="ad-dag astyle" href="">Kom naar de AD-dag > </a>
-      <img src="./assets/bannerpic.jpg" alt="banner" width="300" height="210">
-    </span>
+      </span>
+      <img class="bannerfoto" src="./assets/bannerpic.jpg" alt="banner" width="300" height="210">
   </section>
 
   <p class="divider">het laatste nieuws</p>
