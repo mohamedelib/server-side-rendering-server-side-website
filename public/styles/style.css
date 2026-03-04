@@ -298,6 +298,12 @@ header a {
   margin: var(--space-md);
 }
 
+.waaromkies {
+  @media (min-width: 780px) {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+}
 .waaromkies ul {
   display: flex;
   flex-direction: column;
