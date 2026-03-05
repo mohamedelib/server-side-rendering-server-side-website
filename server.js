@@ -14,13 +14,19 @@ const eventData = await fetch(
   "https://fdnd-agency.directus.app/items/adconnect_events",
 );
 
+const awardData = await fetch(
+  "https://fdnd-agency.directus.app/items/adconnect_nominations",
+);
+
 // Lees van de response van die fetch het JSON object in, waar we iets mee kunnen doen
 const documentDataJSON = await documentData.json();
 const eventDataJSON = await eventData.json();
+const awardDataJSON = await awardData.json();
 
 // Controleer eventueel de data in je console
 // (Let op: dit is _niet_ de console van je browser, maar van NodeJS, in je terminal)
-console.log(documentDataJSON);
+
+console.log(awardDataJSON);
 
 // Maak een nieuwe Express applicatie aan, waarin we de server configureren
 const app = express();
