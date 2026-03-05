@@ -5,7 +5,7 @@ import express from "express";
 // Importeer de Liquid package (ook als dependency via npm geïnstalleerd)
 import { Liquid } from "liquidjs";
 
-console.log("Hieronder moet je waarschijnlijk nog wat veranderen");
+console.log("Server Gestart");
 // Doe een fetch naar de data die je nodig hebt
 const documentData = await fetch(
   "https://fdnd-agency.directus.app/items/adconnect_documents",
