@@ -352,6 +352,70 @@ header a {
 }
 
 /* Student pagina */
+.profile {
+  padding-top: 2em;
+  color: white;
+  background-color: var(--color-accent);
+
+  display: grid;
+  grid-template-rows: 0.1fr 0.2fr 0.3fr 0.1fr 0.2fr 0.2fr;
+}
+
+.profile h1 {
+  font-size: 14px;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 4px;
+  font-weight: normal;
+  border-radius: 15px;
+  grid-row: 2 / 3;
+  align-items: center;
+  align-self: center;
+}
+
+.profile h2 {
+  grid-row: 3 / 4;
+}
+.profile img {
+  border-radius: 10px;
+  outline: 2px solid var(--color-brand-active);
+  grid-row: 4 / 5;
+}
+
+dl {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+dt {
+  grid-row: 1;
+}
+
+dd {
+  grid-row: 2;
+}
 dd {
   margin: 0;
+}
+
+.profile img,
+.profile h1,
+.profile h2 {
+  margin: 0 auto;
+}
+.profile a {
+  color: white;
+  text-decoration: none;
+  margin-bottom: 10px;
+  grid-row: 1 / 2;
+}
+
+.video {
+  margin: 0 auto;
+}
+
+.dividerr {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  margin: 0 auto;
 }
