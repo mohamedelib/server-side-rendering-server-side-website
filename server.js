@@ -80,7 +80,239 @@ app.get("/", async function (request, response) {
   };
 
   response.render("index.liquid", {
-    title: "Homepage",
+    title: "Home",
+    extraData: extraData,
+    documents: documentDataJSON.data,
+    events: eventDataJSON,
+  });
+});
+
+app.get("/Ad-dag", async function (request, response) {
+  // Render index.liquid uit de Views map
+  // Geef hier eventueel data aan mee
+  const extraData = {
+    homepageHeader: {
+      buttons: [
+        {
+          url: "#bla",
+          text: "Meer over Ad's",
+        },
+        {
+          url: "#bla",
+          text: "Kom naar de AD-dag >",
+        },
+      ],
+    },
+  };
+
+  response.render("AD-dag.liquid", {
+    title: "Home",
+    extraData: extraData,
+    documents: documentDataJSON.data,
+    events: eventDataJSON,
+  });
+});
+
+app.get("/Overons", async function (request, response) {
+  // Render index.liquid uit de Views map
+  // Geef hier eventueel data aan mee
+  const extraData = {
+    homepageHeader: {
+      buttons: [
+        {
+          url: "#bla",
+          text: "Meer over Ad's",
+        },
+        {
+          url: "#bla",
+          text: "Kom naar de AD-dag >",
+        },
+      ],
+    },
+  };
+
+  response.render("Overons.liquid", {
+    title: "Home",
+    extraData: extraData,
+    documents: documentDataJSON.data,
+    events: eventDataJSON,
+  });
+});
+
+app.get("/Talentaward", async function (request, response) {
+  // Render index.liquid uit de Views map
+  // Geef hier eventueel data aan mee
+  const extraData = {
+    homepageHeader: {
+      buttons: [
+        {
+          url: "#bla",
+          text: "Meer over Ad's",
+        },
+        {
+          url: "#bla",
+          text: "Kom naar de AD-dag >",
+        },
+      ],
+    },
+  };
+
+  response.render("Talentaward.liquid", {
+    title: "Home",
+    extraData: extraData,
+    documents: documentDataJSON.data,
+    events: eventDataJSON,
+  });
+});
+
+app.get("/Talentaward/student", async function (request, response) {
+  // Render index.liquid uit de Views map
+  // Geef hier eventueel data aan mee
+  const extraData = {
+    homepageHeader: {
+      buttons: [
+        {
+          url: "#bla",
+          text: "Meer over Ad's",
+        },
+        {
+          url: "#bla",
+          text: "Kom naar de AD-dag >",
+        },
+      ],
+    },
+  };
+
+  response.render("student.liquid", {
+    title: "Home",
+    extraData: extraData,
+    documents: documentDataJSON.data,
+    events: eventDataJSON,
+  });
+});
+app.get("/Contact", async function (request, response) {
+  // Render index.liquid uit de Views map
+  // Geef hier eventueel data aan mee
+  const extraData = {
+    homepageHeader: {
+      buttons: [
+        {
+          url: "#bla",
+          text: "Meer over Ad's",
+        },
+        {
+          url: "#bla",
+          text: "Kom naar de AD-dag >",
+        },
+      ],
+    },
+  };
+
+  response.render("contact.liquid", {
+    title: "Home",
+    extraData: extraData,
+    documents: documentDataJSON.data,
+    events: eventDataJSON,
+  });
+});
+
+app.get("/Over-Ads", async function (request, response) {
+  // Render index.liquid uit de Views map
+  // Geef hier eventueel data aan mee
+  const extraData = {
+    homepageHeader: {
+      buttons: [
+        {
+          url: "#bla",
+          text: "Meer over Ad's",
+        },
+        {
+          url: "#bla",
+          text: "Kom naar de AD-dag >",
+        },
+      ],
+    },
+  };
+
+  response.render("Over-Ads.liquid", {
+    title: "Home",
+    extraData: extraData,
+    documents: documentDataJSON.data,
+    events: eventDataJSON,
+  });
+});
+app.get("/Over-Ads/FAQ", async function (request, response) {
+  // Render index.liquid uit de Views map
+  // Geef hier eventueel data aan mee
+  const extraData = {
+    homepageHeader: {
+      buttons: [
+        {
+          url: "#bla",
+          text: "Meer over Ad's",
+        },
+        {
+          url: "#bla",
+          text: "Kom naar de AD-dag >",
+        },
+      ],
+    },
+  };
+
+  response.render("FAQ.liquid", {
+    title: "Home",
+    extraData: extraData,
+    documents: documentDataJSON.data,
+    events: eventDataJSON,
+  });
+});
+
+app.get("/Nieuws", async function (request, response) {
+  // Render index.liquid uit de Views map
+  // Geef hier eventueel data aan mee
+  const extraData = {
+    homepageHeader: {
+      buttons: [
+        {
+          url: "#bla",
+          text: "Meer over Ad's",
+        },
+        {
+          url: "#bla",
+          text: "Kom naar de AD-dag >",
+        },
+      ],
+    },
+  };
+
+  response.render("nieuws.liquid", {
+    title: "Home",
+    extraData: extraData,
+    documents: documentDataJSON.data,
+    events: eventDataJSON,
+  });
+});
+
+app.get("/Publicaties", async function (request, response) {
+  // Render index.liquid uit de Views map
+  // Geef hier eventueel data aan mee
+  const extraData = {
+    homepageHeader: {
+      buttons: [
+        {
+          url: "#bla",
+          text: "Meer over Ad's",
+        },
+        {
+          url: "#bla",
+          text: "Kom naar de AD-dag >",
+        },
+      ],
+    },
+  };
+
+  response.render("publicaties.liquid", {
+    title: "Home",
     extraData: extraData,
     documents: documentDataJSON.data,
     events: eventDataJSON,
