@@ -176,6 +176,15 @@ app.get("/Talentaward/student", async function (request, response) {
   // Geef hier eventueel data aan mee
   const extraData = {
     homepageHeader: {
+      headeritem1: "FAQ's",
+      headeritem2: "Over ons",
+      headeritem3: "Contact",
+      scndheaderitem1: "Home",
+      scndheaderitem2: "Over Ad's",
+      scndheaderitem3: "Publicaties",
+      scndheaderitem4: "Talentaward",
+      scndheaderitem5: "Nieuws",
+      scndheaderitem6: "Kom naar Ad-dag",
       buttons: [
         {
           url: "#bla",
