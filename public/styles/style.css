@@ -350,3 +350,8 @@ header a {
   background-color: var(--color-accent);
   color: white;
 }
+
+/* Student pagina */
+dd {
+  margin: 0;
+}

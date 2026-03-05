@@ -65,5 +65,37 @@
     <img class="burgermenu" src="/assets/burger-bar.png" alt="menu" width="28" height="30">
   </nav>
 </header>
+{% for student in students %}
+<main>
+  <section class="profile">
+  <a href="/views/index.liquid"> < Terug naar genomineerde</a>
+  <h1> Talent Award Genomineerde 2026 </h1>
+  <h2> {{ student.title }} </h2>
+  <img src="https://fdnd-agency.directus.app/assets/{{ student.profile_picture }}" width="300" height="300" alt="{{ student.title }}">
+  <dl>
+  <dt>Variant:</dt>
+  <dd> {{ student.education_variant }}</dd>
 
+  <dt>Opleiding:</dt>
+  <dd>{{  student.course }}</dd>
+
+  <dt>Instelling</dt>
+  <dd> {{ student.institution }}</dd>
+
+  <dt>Status:</dt>
+  <dd>Alumna - afgestudeerd </dd>
+</dl>
+  </section>
+  
+
+  <section class="video">
+    <h2>Kennismakingsvideo</h2>
+    <img src="/assets/video.png" width="300" height="200">
+  </section>
+
+  <section class="info">
+    <h3> Haar Verhaal </h3>
+    <p> {{  student.body }} </p>
+</main>
+{% endfor %}
 {% render 'partials/foot.liquid' %}
