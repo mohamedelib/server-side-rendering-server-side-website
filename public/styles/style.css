@@ -250,7 +250,7 @@ header a {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 0.5fr 0.5fr;
-  outline: 1px solid black;
+  outline: 1px solid var(--color-accent);
   border-radius: 1em;
   padding: 0.7em;
   max-width: 375px;
