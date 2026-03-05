@@ -65,26 +65,35 @@
     <img class="burgermenu" src="/assets/burger-bar.png" alt="menu" width="28" height="30">
   </nav>
 </header>
+
+{% comment %} einde header {% endcomment %}
 {% for student in students %}
+  {% comment %} profile {% endcomment %}
 <main>
   <section class="profile">
-  <a href="/views/index.liquid"> < Terug naar genomineerde</a>
+  <a href="/Talentaward"> < Terug naar genomineerde</a>
   <h1> Talent Award Genomineerde 2026 </h1>
   <h2> {{ student.title }} </h2>
   <img src="https://fdnd-agency.directus.app/assets/{{ student.profile_picture }}" width="300" height="300" alt="{{ student.title }}">
+ <div class="dividerr">
   <dl>
+
   <dt>Variant:</dt>
   <dd> {{ student.education_variant }}</dd>
 
   <dt>Opleiding:</dt>
   <dd>{{  student.course }}</dd>
+</dl>
 
+<dl>
   <dt>Instelling</dt>
   <dd> {{ student.institution }}</dd>
 
   <dt>Status:</dt>
   <dd>Alumna - afgestudeerd </dd>
+
 </dl>
+ </div>
   </section>
   
 
