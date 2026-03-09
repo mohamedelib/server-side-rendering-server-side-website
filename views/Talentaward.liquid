@@ -1,4 +1,10 @@
 {% render 'partials/head.liquid', title: 'Home' %}
 
 <a href="/Talentaward/student"> Student page</a>
+
+{% for student in students %}
+  <a href="/student/{{ student.id }}">
+    <p>{{ student.title }}</p>
+  </a>
+{% endfor %}
 {% render 'partials/foot.liquid' %}

@@ -167,7 +167,7 @@ app.get("/Talentaward", async function (request, response) {
     title: "Home",
     extraData: extraData,
     documents: documentDataJSON.data,
-    events: eventDataJSON,
+    students: awardDataJSON.data,
   });
 });
 
