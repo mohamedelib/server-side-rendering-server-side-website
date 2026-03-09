@@ -364,6 +364,12 @@ header a {
 
   display: grid;
   grid-template-rows: 0.1fr 0.2fr 0.3fr 0.1fr 0.2fr 0.2fr;
+
+  @media (min-width: 1160px) {
+    grid-template-columns: 0.7fr 0.3fr;
+    grid-template-rows: repeat(5, auto);
+    padding: 4rem 2rem;
+  }
 }
 
 .profile h1 {
@@ -384,6 +390,12 @@ header a {
   border-radius: 10px;
   outline: 2px solid var(--color-brand-active);
   grid-row: 4 / 5;
+  @media (min-width: 1160px) {
+    grid-column: 2;
+    align-self: center;
+    grid-row: 1 / -1;
+    max-width: 500px;
+  }
 }
 
 dl {
@@ -406,6 +418,19 @@ dd {
 .profile h1,
 .profile h2 {
   margin: 0 auto;
+  @media (min-width: 1160px) {
+    margin: 0;
+  }
+}
+
+.profile h1,
+.profile h2,
+.profile a,
+div.dividerr {
+  margin: 0 auto;
+  @media (min-width: 1160px) {
+    margin-left: var(--space-md);
+  }
 }
 .profile a {
   color: white;
@@ -422,5 +447,18 @@ dd {
   display: flex;
   flex-direction: column;
   width: fit-content;
+  margin: 0 auto;
+  @media (min-width: 1160px) {
+    grid-column: 1 / 2;
+    margin: 0;
+  }
+}
+
+.video,
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: fit-content;
   margin: 0 auto;
 }
