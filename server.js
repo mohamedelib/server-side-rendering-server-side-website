@@ -171,7 +171,7 @@ app.get("/Talentaward", async function (request, response) {
   });
 });
 
-app.get("/Talentaward/student", async function (request, response) {
+app.get("/Talentaward/student/:title", async function (request, response) {
   // Render index.liquid uit de Views map
   // Geef hier eventueel data aan mee
   const extraData = {
