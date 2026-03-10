@@ -577,3 +577,7 @@ a.ad-dag.astyle {
   padding-left: 10px;
   padding-bottom: 10px;
 }
+.ADdagrec {
+  background-color: var(--color-accent);
+  color: white;
+}
