@@ -145,33 +145,7 @@ app.get("/Overons", async function (request, response) {
   });
 });
 
-app.get("/Talentaward", async function (request, response) {
-  // Render index.liquid uit de Views map
-  // Geef hier eventueel data aan mee
-  const extraData = {
-    homepageHeader: {
-      buttons: [
-        {
-          url: "#bla",
-          text: "Meer over Ad's",
-        },
-        {
-          url: "#bla",
-          text: "Kom naar de AD-dag >",
-        },
-      ],
-    },
-  };
-
-  response.render("Talentaward.liquid", {
-    title: "Home",
-    extraData: extraData,
-    documents: documentDataJSON.data,
-    students: awardDataJSON.data,
-  });
-});
-
-app.get("/Talentaward/student/:title", async function (request, response) {
+app.get("/talentaward", async function (request, response) {
   // Render index.liquid uit de Views map
   // Geef hier eventueel data aan mee
   const extraData = {
@@ -185,16 +159,44 @@ app.get("/Talentaward/student/:title", async function (request, response) {
       scndheaderitem4: "Talentaward",
       scndheaderitem5: "Nieuws",
       scndheaderitem6: "Kom naar Ad-dag",
-      buttons: [
-        {
-          url: "#bla",
-          text: "Meer over Ad's",
-        },
-        {
-          url: "#bla",
-          text: "Kom naar de AD-dag >",
-        },
-      ],
+    },
+  };
+
+  const talentData = {
+    introtitle: "AD TALENT AWARD 2026",
+    introtext:
+      "Tijdens de Landelijke Ad-dag op 17 april 2026 bij de Hanze in Groningen worden de Ad Talent Awards 2026 uitgereikt. Twee Ad Talenten worden op deze dag benoemd tot landelijke ambassadeurs van het Ad-onderwijs: één ambassadeur voor voltijd en één voor deeltijd/duaal. Elke hogeschool aangesloten bij het Overlegplatform Associate degrees kon hiervoor één Ad Talent nomineren. Op deze pagina stellen we alle genomineerde Ad Talenten aan jullie voor.",
+    categorie: "2",
+    typeopleiding: "Voltijd & Deeltijd/duaal",
+    genomineerde: "6",
+    hogescholen: "Van 6 hogescholen",
+    uitreikingsdatum: "17 april 2026",
+    uitreikingsloca: "Hanze, Groningen",
+  };
+
+  response.render("Talentaward.liquid", {
+    title: "Home",
+    extraData: extraData,
+    documents: documentDataJSON.data,
+    students: awardDataJSON.data,
+    talentData: talentData,
+  });
+});
+
+app.get("/Talentaward/student/:title", async function (request, response) {
+  const studentTitle = decodeURIComponent(request.params.title);
+
+  const extraData = {
+    homepageHeader: {
+      headeritem1: "FAQ's",
+      headeritem2: "Over ons",
+      headeritem3: "Contact",
+      scndheaderitem1: "Home",
+      scndheaderitem2: "Over Ad's",
+      scndheaderitem3: "Publicaties",
+      scndheaderitem4: "Talentaward",
+      scndheaderitem5: "Nieuws",
+      scndheaderitem6: "Kom naar Ad-dag",
     },
   };
 
@@ -203,8 +205,10 @@ app.get("/Talentaward/student/:title", async function (request, response) {
     extraData: extraData,
     documents: documentDataJSON.data,
     students: awardDataJSON.data,
+    studentTitle: studentTitle,
   });
 });
+
 app.get("/Contact", async function (request, response) {
   // Render index.liquid uit de Views map
   // Geef hier eventueel data aan mee
