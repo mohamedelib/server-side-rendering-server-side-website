@@ -67,7 +67,7 @@
 </header>
 
 {% comment %} einde header {% endcomment %}
-{% for student in students %}
+{% assign student = students | find: "title", studentTitle %}
   {% comment %} profile {% endcomment %}
 <main>
   <section class="profile">
@@ -106,5 +106,5 @@
     <h3> Haar Verhaal </h3>
     <p> {{  student.body }} </p>
 </main>
-{% endfor %}
+
 {% render 'partials/foot.liquid' %}
