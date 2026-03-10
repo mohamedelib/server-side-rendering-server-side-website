@@ -518,3 +518,23 @@ div.dividerr {
   color: var(--color-accent);
   font-weight: 400;
 }
+
+.introductie {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+
+  justify-content: center;
+  background-color: var(--color-accent-subtle);
+  padding: 0 20px;
+}
+
+.verwijzing {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  @media (min-width: 450px) {
+    flex-direction: row;
+  }
+}
