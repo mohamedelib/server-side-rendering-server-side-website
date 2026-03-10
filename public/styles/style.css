@@ -591,3 +591,14 @@ a.ad-dag.astyle {
   color: var(--color-accent);
   font-weight: 600;
   cursor: pointer;
+}
+
+.flexer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.loll {
+  max-width: 100%;
+}
