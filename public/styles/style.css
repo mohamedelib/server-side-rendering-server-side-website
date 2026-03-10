@@ -149,7 +149,6 @@ header a {
   outline: 1.5px solid var(--color-accent);
   border-radius: var(--button-outline-radius);
   cursor: pointer;
-  width: fit-content;
 }
 
 /* einde stylesheet */
@@ -197,7 +196,6 @@ header a {
 .ad-dag {
   background-color: var(--color-accent);
   color: var(--color-bg-page);
-  margin-bottom: 2em;
 }
 
 .banner {
