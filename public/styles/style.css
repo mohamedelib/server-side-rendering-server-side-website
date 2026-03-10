@@ -538,3 +538,23 @@ div.dividerr {
     flex-direction: row;
   }
 }
+a.overons.astyle,
+a.ad-dag.astyle {
+  max-width: 150px;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  max-width: 250px;
+  gap: 1em;
+  background-color: white;
+  outline: 2px solid var(--color-border);
+  border-radius: 12px;
+  margin: 0 auto;
+  padding: 1em 2.5em;
+  margin-top: 30px;
+  width: 100%;
+  max-width: 250px;
+}
+
