@@ -569,3 +569,11 @@ a.ad-dag.astyle {
   margin: 0;
 }
 
+.nomidata {
+  padding: 20px;
+}
+
+.nodetails {
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
