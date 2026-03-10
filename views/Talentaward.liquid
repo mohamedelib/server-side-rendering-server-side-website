@@ -1,10 +1,126 @@
 {% render 'partials/head.liquid', title: 'Home' %}
+<header>
+  <nav class="first-header">
+    <ul>
+      <li>
+        <a href="">{{ extraData.homepageHeader.headeritem1 }}</a>
+      </li>
+      <li>
+        <a href="">{{ extraData.homepageHeader.headeritem2 }}</a>
+      </li>
+      <li>
+        <a href="">{{ extraData.homepageHeader.headeritem3 }}</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+<header>
+  <nav class="second-header">
+    <img src="./assets/logo.svg" alt="Associate Degree Platform" width="200" height="50">
+    <ul>
+      <li>
+        <a href="">
+          {{ extraData.homepageHeader.scndheaderitem1 }}
+        </a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a href="">
+          {{ extraData.homepageHeader.scndheaderitem2 }}
+        </a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a href="">
+          {{ extraData.homepageHeader.scndheaderitem3 }}
+        </a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a href="/Talentaward">
+          {{ extraData.homepageHeader.scndheaderitem4 }}
+        </a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a href="">
+          {{ extraData.homepageHeader.scndheaderitem5 }}
+        </a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a class="astyle ad-dag" href="">
+          {{ extraData.homepageHeader.scndheaderitem6 }}
+        </a>
+      </li>
+    </ul>
 
-<a href="/Talentaward/student"> Student page</a>
+    <img class="burgermenu" src="./assets/burger-bar.png" alt="menu" width="28" height="30">
+  </nav>
+</header>
+{% comment %} einde header {% endcomment %}
 
-{% for student in students %}
-  <a href="/Talentaward/student/{{ student.title }}">
-    <p>{{ student.title }}</p>
-  </a>
-{% endfor %}
+{% comment %} Intro {% endcomment %}
+<section class="introductie">
+  <p>Home / Talent Award / Genomineerden 2026</p>
+  <h1>{{ talentData.introtitle }}</h1>
+  <p>
+    {{ talentData.introtext }}
+  </p>
+
+  <a href="">Meer over de Ad Talent Award ></a>
+  <a href="">Bekijk de Genomineerden</a>
+
+  <article class="box">
+    <h3>Categorieen</h3>
+    <p>{{ extraData.categorie }}</p>
+    <p>{{ extraData.typeopleiding }}</p>
+  </article>
+  <article class="box">
+    <h3>Genomineerden</h3>
+    <p>{{ extraData.hogescholen }}</p>
+    <p>{{ extraData.genomineerde }}</p>
+  </article>
+  <article class="uitrijkingbox">
+    <h3>Uitreiking</h3>
+    <p>{{ extraData.uitreikingsdatum }}</p>
+    <p>{{ extraData.uitreikingsloca }}</p>
+  </article>
+</section>
+<section class="nomidata">
+  <p>6 genomineerden</p>
+  <select id="sort-select">
+    <option value="">Sorteren</option>
+    <option value="az">Naam A-Z</option>
+    <option value="za">Naam Z-A</option>
+  </select>
+
+  <p>Voltijd</p>
+  <h2>De gemonineerden voltijd</h2>
+  <option></option>
+</section>
+<section class="talentcard">
+  {% for student in students %}
+    <a href="/Talentaward/student/{{ student.title}}">
+      <img
+        src="https://fdnd-agency.directus.app/assets/{{ student.profile_picture }}"
+        alt="{{student.title}}"
+        width="150"
+        height="150"
+      >
+      <p>{{ student.title }}</p>
+    </a>
+  {% endfor %}
+</section>
+
+<section class="ADdagrec">
+  <h2>Wees erbij op 17 april</h2>
+  <p>Kom naar de Landelijke Ad-dag bij de Hanze in Groningen en woon de uitreiking van de Ad Talent Award 2026 bij.</p>
+  <a>Meld je aan voor de Ad-Dag > </a>
+</section>
 {% render 'partials/foot.liquid' %}
