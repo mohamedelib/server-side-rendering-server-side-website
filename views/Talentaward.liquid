@@ -72,49 +72,63 @@
   <p>
     {{ talentData.introtext }}
   </p>
-
-  <a href="">Meer over de Ad Talent Award ></a>
-  <a href="">Bekijk de Genomineerden</a>
-
+  <span class="verwijzing">
+    <a class="astyle ad-dag" href="" style="
+    max-width: 100%;
+">Meer over de Ad Talent Award ></a>
+    <a class="astyle" href="" >Bekijk de Genomineerden</a>
+  </span>
   <article class="box">
     <h3>Categorieen</h3>
-    <p>{{ extraData.categorie }}</p>
-    <p>{{ extraData.typeopleiding }}</p>
+    <p>{{ talentData.categorie }}</p>
+    <p>{{ talentData.typeopleiding }}</p>
   </article>
   <article class="box">
     <h3>Genomineerden</h3>
-    <p>{{ extraData.hogescholen }}</p>
-    <p>{{ extraData.genomineerde }}</p>
+    <p>{{ talentData.hogescholen }}</p>
+    <p>{{ talentData.genomineerde }}</p>
   </article>
-  <article class="uitrijkingbox">
+  <article class="box uitreiking">
     <h3>Uitreiking</h3>
-    <p>{{ extraData.uitreikingsdatum }}</p>
-    <p>{{ extraData.uitreikingsloca }}</p>
+    <p>{{ talentData.uitreikingsdatum }}</p>
+    <p>{{ talentData.uitreikingsloca }}</p>
   </article>
 </section>
 <section class="nomidata">
+  <div class="flexer">
   <p>6 genomineerden</p>
   <select id="sort-select">
+    
     <option value="">Sorteren</option>
     <option value="az">Naam A-Z</option>
     <option value="za">Naam Z-A</option>
   </select>
-
-  <p>Voltijd</p>
+</div>
   <h2>De gemonineerden voltijd</h2>
-  <option></option>
 </section>
 <section class="talentcard">
   {% for student in students %}
+    <div class="kaartje">
     <a href="/Talentaward/student/{{ student.title}}">
+      
       <img
-        src="https://fdnd-agency.directus.app/assets/{{ student.profile_picture }}"
+        src="{% if student.profile_picture %}https://fdnd-agency.directus.app/assets/{{ student.profile_picture }}{% else %}/assets/prop.jpg{% endif %}"
         alt="{{student.title}}"
-        width="150"
-        height="150"
       >
-      <p>{{ student.title }}</p>
     </a>
+   {% if student.education_variant %}
+  <p class="labell">{{ student.education_variant }}</p>
+{% else %}
+  <p class="labell">Onbekend</p>
+{% endif %}
+    <span class="nodetails">
+      <p>{{ student.title }}</p>
+      <p>{{ student.institution }}</p>
+      <p>{{ student.course }}</p>
+
+      <a href="/Talentaward/student/{{ student.title}}"> Lees meer ></a>
+      </div>
+    </span>
   {% endfor %}
 </section>
 
