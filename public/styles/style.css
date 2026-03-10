@@ -563,3 +563,9 @@ a.ad-dag.astyle {
   background-color: var(--color-accent);
   outline: none;
   margin-bottom: 30px;
+}
+.box p,
+.box h3 {
+  margin: 0;
+}
+
