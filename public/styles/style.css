@@ -558,3 +558,8 @@ a.ad-dag.astyle {
   max-width: 250px;
 }
 
+.uitreiking {
+  color: white;
+  background-color: var(--color-accent);
+  outline: none;
+  margin-bottom: 30px;
