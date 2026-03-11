@@ -556,6 +556,9 @@ a.ad-dag.astyle {
   margin-top: 30px;
   width: 100%;
   max-width: 250px;
+  margin-bottom: 0;
+  max-height: 156px;
+  box-sizing: border-box;
 }
 
 .uitreiking {
@@ -578,8 +581,14 @@ a.ad-dag.astyle {
   padding-bottom: 10px;
 }
 .ADdagrec {
+  display: flex;
+  flex-direction: column;
   background-color: var(--color-accent);
   color: white;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
 }
 
 .nomidata select {
@@ -601,4 +610,24 @@ a.ad-dag.astyle {
 
 .loll {
   max-width: 100%;
+}
+
+.allbox {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: stretch;
+}
+
+@media (min-width: 800px) {
+  .allbox {
+    flex-direction: row;
+    justify-content: center;
+    gap: 2em;
+  }
+}
+
+.dag {
+  outline: 2px solid white;
+  color: white;
 }
